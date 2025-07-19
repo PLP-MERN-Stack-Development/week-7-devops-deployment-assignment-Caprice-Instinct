@@ -1,0 +1,21 @@
+{
+  "name": "mern-task-manager",
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ],
+  "env": {
+    "REACT_APP_API_URL": "https://mern-task-manager-api.onrender.com",
+    "REACT_APP_NAME": "Task Manager",
+    "REACT_APP_VERSION": "1.0.0"
+  }
+}
